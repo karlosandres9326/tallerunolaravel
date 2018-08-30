@@ -11,6 +11,29 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+/*
+Route::get('/pagina1', function () {
+    return view('pagina1',[
+
+        'name'=>'Carlos Grajales',
+        'phone'=>'3103911515',
+        'email'=>'carlosandres9326@gmail.com'
+
+    ]);
+
+
+});
+
+*/
+
+Route::get('/pagina2/{num_table}', function ($num_table) {
+    return view('pagina2',
+    [
+
+        'num_table'=> $num_table,
+       
+
+    ]);
+
+    
 });
