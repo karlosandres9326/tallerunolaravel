@@ -19,8 +19,8 @@
             @for ($i=1; $i<=10; $i++)
 
             <tr>
-                <td> <b> {{$num_table}} x {{$i}} </b>
-                </td>   {{$num_table * $i}} </td> 
+                <td> <b> {{$num_table}} x {{$i}} </b> </td>
+                <td>{{$num_table * $i}} </td> 
                 
             </tr>
 
